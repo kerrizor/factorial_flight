@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Factorial3Ways::VERSION
   spec.authors       = ["Kerri Miller"]
   spec.email         = ["kerrizor@kerrizor.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Factorials patched onto Fixnum, 3 ways.}
+  spec.description   = %q{I get asked to calculate factorials in interviews as an example of recursion all the time, so here you go. Can we talk about how I solve the real problems facing your product or business now?}
+  spec.homepage      = "http://github.com/kerrizor/factorial_3_ways"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
