@@ -1,9 +1,9 @@
 require 'factorial_3_ways/version'
 
 module Factorial3Ways
-  def factorial(method = :recursive)
+  def factorial(method = :inject)
     return 'Can not calculate factorial of a negative number' if self < 0
-    method = :recursive unless [:loop, :inject, :recursive].include? method
+    method = :inject unless [:loop, :inject, :recursive].include? method
 
     case method
     when :loop
