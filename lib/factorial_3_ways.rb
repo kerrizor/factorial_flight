@@ -18,6 +18,7 @@ module Factorial3Ways
   private
 
   def inject_method
+    return 1 if self < 1
     (1..self).inject(:*)
   end
 
