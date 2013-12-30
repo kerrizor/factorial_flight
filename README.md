@@ -1,4 +1,4 @@
-factorial_3_ways
+factorial_flight
 ================
 
 Patches 4* different solutions for factorials onto Fixnum. 
@@ -13,7 +13,7 @@ Can we talk about how I solve the real problems facing your product or business 
 
 Add this line to your application's Gemfile:
 
-    gem 'factorial_3_ways'
+    gem 'factorial_flight'
 
 And then execute:
 
@@ -21,7 +21,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install factorial_3_ways
+    $ gem install factorial_flight
 
 ## Usage
 
@@ -29,7 +29,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/factorial_3_ways/fork )
+1. Fork it ( http://github.com/<my-github-username>/factorial_flight/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

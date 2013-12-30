@@ -1,6 +1,6 @@
-require 'factorial_3_ways/version'
+require 'factorial_flight/version'
 
-module Factorial3Ways
+module FactorialFlight
   def factorial(method = :inject)
     return 'Can not calculate factorial of a negative number' if self < 0
 
@@ -46,5 +46,5 @@ module Factorial3Ways
 end
 
 class Fixnum
-  include Factorial3Ways
+  include FactorialFlight
 end
