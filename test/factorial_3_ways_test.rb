@@ -24,4 +24,16 @@ class TestFactorial3Ways < MiniTest::Unit::TestCase
   def test_it_returns_a_factorial_for_loop
     assert_equal 120, 5.factorial(:loop)
   end
+
+  def test_inject_works_for_0
+    assert_equal 1, 0.factorial(:inject)
+  end
+
+  def test_loop_works_for_0
+    assert_equal 1, 0.factorial(:loop)
+  end
+
+  def test_recursive_works_for_0
+    assert_equal 1, 0.factorial(:recursive)
+  end
 end
