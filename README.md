@@ -1,13 +1,11 @@
 factorial_flight
 ================
 
-Patches 4* different solutions for factorials onto Fixnum. 
+Patches 4 different solutions for factorials onto Fixnum. 
 
 I get asked to calculate factorials in interviews as an example of recursion all the time, so here you go.
 
 Can we talk about how I solve the real problems facing your product or business now?
-
-(\* I know, I know... I originally only thought of doing 3 ways, and someone on Twitter pointed out ```Math::gamma```...)
 
 ## Installation
 
@@ -25,7 +23,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    2.0.0p247 :001 > require 'factorial_flight'
+     => true
+    2.0.0p247 :002 > 5.factorial
+     => 120
+    2.0.0p247 :003 > 6.factorial(:recursive)
+     => 720
+    2.0.0p247 :004 > -1.factorial
+     => "Can not calculate factorial of a negative number"
+    2.0.0p247 :005 >
+
+Included in the available options for ```#factorial```:
+
+:gamma
+: Uses Math::gamma(n+1) 
+:inject
+: **Default** - Uses Enumerable's ```#inject``` method 
+:loop
+: Uses a loop to iterate over the range of integers included in the factorial
+:recursive
+: Perhaps what most interviewers are specifically asking for when requiring a candidate to write an algorithm to find factorials
 
 ## Contributing
 
