@@ -3,19 +3,23 @@ require 'factorial_3_ways/version'
 module Factorial3Ways
   def factorial(method = :inject)
     return 'Can not calculate factorial of a negative number' if self < 0
-    method = :inject unless [:loop, :inject, :recursive].include? method
 
     case method
+    when :gamma
+      gamma_method
     when :loop
       loop_method
-    when :inject
-      inject_method
     when :recursive
       recursive_method
+    else
+      inject_method
     end
   end
 
   private
+  def gamma_method
+    Math::gamma(self + 1).to_i
+  end
 
   def inject_method
     return 1 if self < 1

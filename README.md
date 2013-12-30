@@ -1,11 +1,13 @@
 factorial_3_ways
 ================
 
-Patches 3 different solutions for factorials onto Fixnum. 
+Patches 4* different solutions for factorials onto Fixnum. 
 
 I get asked to calculate factorials in interviews as an example of recursion all the time, so here you go.
 
 Can we talk about how I solve the real problems facing your product or business now?
+
+(\* I know, I know... I originally only thought of doing 3 ways, and someone on Twitter pointed out ```Math::gamma```...)
 
 ## Installation
 
